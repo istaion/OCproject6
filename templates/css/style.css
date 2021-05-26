@@ -1,0 +1,23 @@
+body {
+  background-color: #ccd6df;
+}
+
+.page-header {
+  background-color: #7d98ae;
+  display: flex;
+  box-sizing: border-box;
+  box-shadow: 3px 3px 5px 1px #6d8ca4;
+  align-items: center;
+}
+.page-header__menu {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+}
+.page-header button {
+  background-color: Transparent;
+  border: none;
+  font-size: x-large;
+}
+
+/*# sourceMappingURL=style.css.map */
