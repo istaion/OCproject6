@@ -69,3 +69,21 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+
+fetch("http://localhost:8000/api/v1/titles/?sort_by=-imdb_score")
+  .then(function(res) {
+    if (res.ok) {
+      return res.json();
+    }
+  })
+  .then(function(value) {
+    for (var i = 1; i < 7; i++) {
+      document
+        .querySelector("#best-movies")
+        .insertAdjacentHTML('beforeend', '<img src=' + value.results[i].image_url + ' alt="best-movie">');
+    }
+  })
+  .catch(function(err) {
+    // Une erreur est survenue
+  });
