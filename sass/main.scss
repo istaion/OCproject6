@@ -27,7 +27,7 @@ body {
   display: flex;
   border: 15px;
   padding: 15px;
-  margin: 15px;
+  margin: 1px, 15px, 15px;
   box-sizing: content-box;
   background-color: $secondary-color;
   border-radius: 5px;
@@ -49,6 +49,20 @@ body {
     p {
       margin-left: 15px;
     }
+  }
+}
+
+.movies {
+  display: flex;
+  border: 15px;
+  padding: 15px;
+  margin: 5px;
+  box-sizing: content-box;
+  background-color: $secondary-color;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px 1px darken($secondary-color, 5%);
+  h2 {
+    text-align: center;
   }
 }
 
